@@ -8,12 +8,12 @@
 
   <script>
     function sendSMS() {
-      var phoneNumbers = ['+573185568036', '+573013247144', '+573162852605']; // array de números de teléfono de los destinatarios
-      var message = 'PROBANDO'; // mensaje de texto a enviar
+      var phoneNumbers = ['1234567890', '0987654321', '5555555555']; // array de números de teléfono de los destinatarios
+      var message = 'Este es un mensaje de texto enviado automáticamente a múltiples números'; // mensaje de texto a enviar
 
       for (var i = 0; i < phoneNumbers.length; i++) {
         var smsLink = 'sms:' + phoneNumbers[i] + ';?&body=' + encodeURIComponent(message);
-        window.location.href = smsLink;
+        window.open(smsLink, '_blank');
       }
     }
   </script>
