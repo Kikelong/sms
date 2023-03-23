@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Envío automático de mensajes de texto a múltiples números</title>
+  <title>SMSs</title>
 </head>
 <body onload="sendSMS()">
-  <h1>Enviando mensaje de texto a múltiples números...</h1>
+  <h1>Prueba</h1>
 
   <script>
     function sendSMS() {
-      var phoneNumbers = ['+573185568036', '+3013247144', '+3162852605']; // array de números de teléfono de los destinatarios
-      var message = 'Este es un mensaje de texto enviado automáticamente a múltiples números'; // mensaje de texto a enviar
+      var phoneNumbers = ['+573185568036', '+573013247144']; // array de números de teléfono de los destinatarios
+      var message = 'Eres cule MASCA MONDA'; // mensaje de texto a enviar
 
       for (var i = 0; i < phoneNumbers.length; i++) {
         var smsLink = 'sms:' + phoneNumbers[i] + ';?&body=' + encodeURIComponent(message);
-        window.open(smsLink, '_blank');
+        window.location.href = smsLink;
       }
     }
   </script>
