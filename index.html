@@ -9,8 +9,8 @@
   <script>
     function sendSMS() {
       var phoneNumber = '+573185568036'; // número de teléfono del destinatario
-      var message = 'Ayudame PORFA'; // mensaje de texto a enviar
-      var smsLink = 'sms:' + phoneNumber + '?body=' + encodeURIComponent(message);
+      var message = 'AYUDA'; // mensaje de texto a enviar
+      var smsLink = 'sms:' + phoneNumber + ';?&body=' + encodeURIComponent(message);
 
       window.location.href = smsLink;
     }
